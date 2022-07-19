@@ -8,7 +8,7 @@ const PhotoGridItem = ({ id, src, alt, tags }) => {
 				<picture>
 					<source
 						type="image/avif"
-						srcset={
+						srcSet={
 							(src.replace(".jpg", ".avif") + " 1x",
 							src.replace(".jpg", "@2x.avif") + " 2x",
 							src.replace(".jpg", "@3x.avif") + " 3x")
@@ -16,7 +16,7 @@ const PhotoGridItem = ({ id, src, alt, tags }) => {
 					/>
 					<source
 						type="image/jpg"
-						srcset={
+						srcSet={
 							(src.replace(".jpg", ".jpg") + " 1x",
 							src.replace(".jpg", "@2x.jpg") + " 2x",
 							src.replace(".jpg", "@3x.jpg") + " 3x")
@@ -46,6 +46,8 @@ const Image = styled.img`
 	height: 300px;
 	border-radius: 2px;
 	margin-bottom: 8px;
+	aspect-ratio: 1/1;
+	object-fit: cover;
 `;
 
 const Tags = styled.ul`
