@@ -23,7 +23,7 @@ const Hero = () => {
 				/>
 				<HeroImage
 					src="/images/hero-img.jpg"
-					alt="Tabby cat with blue eyes looking straight at the camera"
+					alt="Example photo of tabby cat with blue eyes looking straight at the camera"
 				/>
 			</picture>
 			<Swoop src="/swoop.svg" alt="" />
